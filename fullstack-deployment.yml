@@ -71,7 +71,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: bhargavi079/k8-backend-SDP:latest # <-- change this
+          image: bhargavi079/k8-backend-sdp:latest # <-- change this
           ports:
             - containerPort: 2006
 ---
@@ -110,7 +110,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: bhargavi079/k8-frontend-SDP:latest # <-- change this
+          image: bhargavi079/k8-frontend-sdp:latest # <-- change this
           ports:
             - containerPort: 80
             # Points to backend NodePort
