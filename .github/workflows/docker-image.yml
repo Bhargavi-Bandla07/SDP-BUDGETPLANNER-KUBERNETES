@@ -32,7 +32,7 @@ jobs:
           context: ./Backend/budgetplanner
           file: ./Backend/budgetplanner/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/k8-backend-SDP:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/k8-backend-sdp:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./Frontend/frontend
           file: ./Frontend/frontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/k8-frontend-SDP:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/k8-frontend-sdp:latest
